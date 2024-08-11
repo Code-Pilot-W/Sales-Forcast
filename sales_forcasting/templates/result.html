@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Forecast Result</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #bb86fc;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .result {
+            background-color: #2c2c2c;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .result p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #03dac6;
+        }
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            color: #bb86fc;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sales Forecast Result</h1>
+        <div class="result">
+            <p>Predicted Sales: ${{ "%.2f"|format(prediction) }}</p>
+        </div>
+        <a href="/" class="back-link">Make Another Prediction</a>
+    </div>
+</body>
+</html>

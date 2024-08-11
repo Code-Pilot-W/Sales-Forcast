@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit
+scipy
+statsmodels
+python==2.8.19
+flask
